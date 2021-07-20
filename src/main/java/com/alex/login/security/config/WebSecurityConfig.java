@@ -22,6 +22,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.authenticationProvider(daoAuthenticationProvider());
+        auth.inMemoryAuthentication().withUser("user").password(passwordEncoder.encode("pass")).authorities("USER");
     }
 
     @Bean
@@ -56,7 +57,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
             .and()
             .formLogin()
                 .loginPage("/login")
-                .defaultSuccessUrl("/success",true)
+                .defaultSuccessUrl("http://localhost:3000/success",true)
                 .permitAll()
         ;
     }
