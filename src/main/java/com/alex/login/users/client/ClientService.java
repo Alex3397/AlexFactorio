@@ -35,8 +35,7 @@ public class ClientService {
     }
 
     public List<Client> findClients() {
-        List<Client> clients = clientRepository.findAllClient();
-        return clients;
+        return clientRepository.findAllClient();
     }
 
 }

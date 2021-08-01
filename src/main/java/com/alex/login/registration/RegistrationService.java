@@ -128,7 +128,7 @@ public class RegistrationService {
     }
 
     private String buildConfirmationEmail(String name, String link) {
-        Path file = Path.of(System.getProperty("user.dir"),"/front-end/src/emails/Confirm Email/confirmEmail.html");
+        Path file = Path.of(System.getProperty("user.dir"),"/src/main/resources/templates/emails/Confirm Email/confirmEmail.html");
         String imagePath = "https://d1oco4z2z1fhwp.cloudfront.net/templates/default/3971";
         String rawContent = "";
         try {
@@ -140,7 +140,7 @@ public class RegistrationService {
     }
 
     private String buildRevalidationEmail(String name, String link) {
-        Path file = Path.of(System.getProperty("user.dir"),"/front-end/src/emails/Revalidate Token/revalidateToken.html");
+        Path file = Path.of(System.getProperty("user.dir"),"/src/main/resources/templates/emails/Revalidate Token/revalidateToken.html");
         String imagePath = "https://d1oco4z2z1fhwp.cloudfront.net/templates/default/3986";
         String rawContent = "";
         try {
@@ -152,7 +152,7 @@ public class RegistrationService {
     }
 
     private String buildResetPasswordEmail(String name, String link) {
-        Path file = Path.of(System.getProperty("user.dir"),"/front-end/src/emails/Reset Password/resetPassword.html");
+        Path file = Path.of(System.getProperty("user.dir"),"/src/main/resources/templates/emails/Reset Password/resetPassword.html");
         String imagePath = "https://d1oco4z2z1fhwp.cloudfront.net/templates/default/4056";
         String rawContent = "";
         try {
