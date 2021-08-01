@@ -3,7 +3,6 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Test from "./Test";
-import ProtectedRoute from "./ProtectedRoute/ProtectedRoute";
 
 function Routes() {
     return (
