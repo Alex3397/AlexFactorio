@@ -35,4 +35,10 @@ public class ClientController {
         return clients;
     }
 
+    @GetMapping(path = "/xml/{id}", produces = MediaType.APPLICATION_XML_VALUE)
+    public Optional<Client> findClientByIdXML(@PathVariable Long id) {
+        Optional<Client> client = clientService.findClientById(id);
+        return client;
+    }
+
 }
