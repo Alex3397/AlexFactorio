@@ -6,7 +6,7 @@ server:
 spring:
   datasource:
     password: ${DATABASE_PASS}
-    url: ${DATABASE_URL}
+    url: ${BASE_URL}
     username: ${DATABASE_USER}
 
   jpa:

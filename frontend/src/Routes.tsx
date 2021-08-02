@@ -2,14 +2,13 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Test from "./Test";
 
 function Routes() {
     return (
         <BrowserRouter>
             <Switch>
                 <Route path="/login">
-                    <Test />
+                    <div>Alguma coisa</div>
                 </Route>
                 <Route path="/">
                     <div className="App">
