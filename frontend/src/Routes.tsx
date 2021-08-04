@@ -1,14 +1,19 @@
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import BankApp from "./BankApp/BankApp";
+
 
 function Routes() {
     return (
         <BrowserRouter>
             <Switch>
                 <Route path="/login">
-                    <div>Alguma coisa</div>
+                    <div style={{ color: 'white' }}>Alguma coisa</div>
+                </Route>
+                <Route path="/BankApp">
+                    <div style={{ color: 'white' }}>Outra coisa</div>
+                    <BankApp/>
                 </Route>
                 <Route path="/">
                     <div className="App">
@@ -22,6 +27,9 @@ function Routes() {
                                 href="/login"
                             >
                                 Sing In
+                            </a>
+                            <a className="App-link" href="/BankApp">
+                                BankApp
                             </a>
                         </header>
                     </div>
