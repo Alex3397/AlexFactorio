@@ -30,8 +30,8 @@ const Header: React.FC<Props> = ({ toggleTheme }) => {
         <Switch
           onChange={toggleTheme}
           checked={title === 'dark'}
-          checkedIcon={<Moon/>}
-          uncheckedIcon={<Sun/>}
+          checkedIcon={false}
+          uncheckedIcon={false}
           height={10}
           width={40}
           handleDiameter={20}
