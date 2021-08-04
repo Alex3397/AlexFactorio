@@ -9,10 +9,3 @@ export const Container = styled.div`
   justify-content: space-between;
   padding: 0 30px;
 `;
-
-export const Moon = styled.div`
-  bottom: 5px;
-`;
-export const Sun = styled.div`
-  bottom: 5px;
-`;
