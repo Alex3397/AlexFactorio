@@ -19,6 +19,10 @@ const Header: React.FC<Props> = ({ toggleTheme }) => {
          alguma  outra coisa
        </span>
        <span>uma terceira coisa</span>
+       <span>uma quarta coisa</span>
+       <span>uma quinta coisa</span>
+       <span>uma sexta coisa</span>
+       <span>uma sabada coisa</span>
       <Switch
         onChange={toggleTheme}
         checked={title === 'dark'}
