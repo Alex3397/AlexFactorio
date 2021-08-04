@@ -2,8 +2,8 @@ import React, { useContext } from 'react';
 import Switch from 'react-switch';
 import { ThemeContext } from 'styled-components';
 import { shade } from 'polished';
-import Moon from 'moon.svg';
-import Sun from 'sun.svg';
+import { ReactComponent as Moon } from './moon.svg';
+import { ReactComponent as Sun } from './sun.svg';
 import { Container } from './styles';
 
 interface Props {
@@ -27,13 +27,11 @@ const Header: React.FC<Props> = ({ toggleTheme }) => {
       <span>uma sabada coisa</span>
       <span>uma dominga coisa</span>
       <span>
-        <Sun/>
-        <Moon/>
         <Switch
           onChange={toggleTheme}
           checked={title === 'dark'}
-          checkedIcon={false}
-          uncheckedIcon={false}
+          checkedIcon={<Sun className="switch-img"/>}
+          uncheckedIcon={<Moon className="switch-img"/>}
           height={10}
           width={40}
           handleDiameter={20}
