@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 import logo from './logo.svg';
 import './App.css';
 import BankApp from "./BankApp/BankApp";
@@ -16,15 +16,12 @@ function Routes() {
                             <p>
                                 Edit <code>src/App.tsx</code> and save to reload.
                             </p>
-                            <a
-                                className="App-link"
-                                href="/login"
-                            >
+                            <Link className="App-link" to="/login">
                                 Sing In
-                            </a>
-                            <a className="App-link" href="/BankApp">
+                            </Link>
+                            <Link className="App-link" to="/BankApp">
                                 BankApp
-                            </a>
+                            </Link>
                         </header>
                     </div>
                     <div style={{ color: 'white' }}>Alguma coisa</div>
@@ -37,15 +34,12 @@ function Routes() {
                             <p>
                                 Edit <code>src/App.tsx</code> and save to reload.
                             </p>
-                            <a
-                                className="App-link"
-                                href="/login"
-                            >
+                            <Link className="App-link" to="/login">
                                 Sing In
-                            </a>
-                            <a className="App-link" href="/BankApp">
+                            </Link>
+                            <Link className="App-link" to="/BankApp">
                                 BankApp
-                            </a>
+                            </Link>
                         </header>
                     </div>
                     <BankApp/>
@@ -57,15 +51,12 @@ function Routes() {
                             <p>
                                 Edit <code>src/App.tsx</code> and save to reload.
                             </p>
-                            <a
-                                className="App-link"
-                                href="/login"
-                            >
+                            <Link className="App-link" to="/login">
                                 Sing In
-                            </a>
-                            <a className="App-link" href="/BankApp">
+                            </Link>
+                            <Link className="App-link" to="/BankApp">
                                 BankApp
-                            </a>
+                            </Link>
                         </header>
                     </div>
                 </Route>
