@@ -2,8 +2,6 @@ import React, { useContext } from 'react';
 import Switch from 'react-switch';
 import { ThemeContext } from 'styled-components';
 import { shade } from 'polished';
-import { ReactComponent as Moon } from './moon.svg';
-import { ReactComponent as Sun } from './sun.svg';
 import { Container } from './styles';
 
 interface Props {
@@ -30,8 +28,8 @@ const Header: React.FC<Props> = ({ toggleTheme }) => {
         <Switch
           onChange={toggleTheme}
           checked={title === 'dark'}
-          checkedIcon={<Sun className="switch-img"/>}
-          uncheckedIcon={<Moon className="switch-img"/>}
+          checkedIcon={false}
+          uncheckedIcon={false}
           height={10}
           width={40}
           handleDiameter={20}
