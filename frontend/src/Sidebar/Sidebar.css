@@ -12,8 +12,8 @@
   .external-icon {
     position: absolute;
     left: 5px;
-    top: 10px;
-    font-size: 20px;
+    top: 5px;
+    font-size: 35px;
     cursor: pointer;
   }
   #Sidebar .header {
@@ -24,8 +24,8 @@
   #Sidebar .Sidebar-icon {
     position: absolute;
     left: 135px;
-    top: 20px;
-    font-size: 20px;
+    top: 10px;
+    font-size: 35px;
     cursor: pointer;
   }
   #Sidebar .item {
