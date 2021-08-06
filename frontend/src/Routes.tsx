@@ -1,8 +1,11 @@
-import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
-import logo from './logo.svg';
 import './Routes.css';
-import BankApp from "./BankApp/BankApp";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import BankApp from "./Parallel/BankApp/BankApp";
 import Sidebar from "./Sidebar/Sidebar";
+import Login from "./Main/Login/Login";
+import SignUp from "./Main/SignUp/SignUp";
+import LandingPage from "./Main/LandingPage/LandingPage";
+import MainPage from './Main/MainPage/MainPage';
 
 
 function Routes() {
@@ -11,31 +14,19 @@ function Routes() {
             <Sidebar />
             <Switch>
                 <Route path="/login">
-                    <h1>Login</h1>
-                    <div >Alguma coisa</div>
+                    <Login/>
                 </Route>
-                <Route path="/BankApp">
-                    <div >Outra coisa</div>
+                <Route path="/bankapp">
                     <BankApp />
                 </Route>
-                <Route path="/register">
-                    <div >Register</div>
+                <Route path="/signup">
+                    <SignUp />
+                </Route>
+                <Route path="/main">
+                    <MainPage />
                 </Route>
                 <Route path="/">
-                    <div className="App">
-                        <header className="App-header">
-                            <img src={logo} className="App-logo" alt="logo" />
-                            <p>
-                                Edit <code>src/App.tsx</code> and save to reload.
-                            </p>
-                            <Link className="App-link" to="/login">
-                                Sing In
-                            </Link>
-                            <Link className="App-link" to="/BankApp">
-                                BankApp
-                            </Link>
-                        </header>
-                    </div>
+                    <LandingPage />
                 </Route>
             </Switch>
         </BrowserRouter>

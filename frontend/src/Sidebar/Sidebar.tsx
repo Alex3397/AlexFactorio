@@ -35,8 +35,13 @@ const Sidebar = () => {
     return (
         <>
             <div className={"external-icon " + (isCollapsed ? '' : 'collapsed')} onClick={handleCollapse}><FiChevronsRight /></div>
-            <div id="Sidebar" className={(isCollapsed ? 'collapsed' : '')} style={{background: theme.colors.primary}}>
-                <div className="Sidebar-icon" onClick={handleCollapse}><FiChevronsLeft /></div>
+            <div id="Sidebar" className={(isCollapsed ? 'collapsed' : '')} style={{ background: theme.colors.primary }}>
+                <div className="Sidebar-icon" onClick={handleCollapse}>
+                    <FiChevronsLeft />
+                </div>
+                <div className="header">
+                    <span className="header-text">Pages</span>
+                </div>
                 <div className="item">
                     <Link className="link" to="/">
                         <FiHome className="link-icon" />
@@ -44,9 +49,15 @@ const Sidebar = () => {
                     </Link>
                 </div>
                 <div className="item">
-                    <Link className="link" to="/BankApp">
+                    <Link className="link" to="/bankapp">
                         <AiFillBank className="icon" />
                         BankApp
+                    </Link>
+                </div>
+                <div className="item">
+                    <Link className="link" to="/main">
+                        <FiUserPlus className="link-icon" />
+                        Main Page
                     </Link>
                 </div>
                 <div className="item">
@@ -56,12 +67,12 @@ const Sidebar = () => {
                     </Link>
                 </div>
                 <div className="item">
-                    <Link className="link" to="/register">
+                    <Link className="link" to="/signup">
                         <FiUserPlus className="link-icon" />
                         Sing Up
                     </Link>
                 </div>
-                <div>
+                <div className="item">
                     <ThemeProvider theme={theme}>
                         <GlobalStyle />
                         <Toggle toggleTheme={toggleTheme} />

@@ -6,7 +6,9 @@ const light = {
     primary: 'rgb(0, 195, 255)',
     secundary: '#D63AF9',
 
-    background: '#f5f5f5',
+    divBackground: '#ffffff',
+    backgroundColor: '#ffffff',
+    background: '#ffffff',
     text: '#333'
   },
 };

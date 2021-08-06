@@ -5,9 +5,11 @@ const dark = {
     colors: {
       primary: '#333',
       secundary: '#C62E65',
-  
-      background: '#222',
-      text: '#fff'
+      
+      divBackground: '#161b22',
+      backgroundColor: '#0d1117',
+      background: '#0d1117',
+      text: '#c9d1d9'
     },
 }
 

@@ -1,0 +1,102 @@
+#login {
+    height: 100vh;
+}
+#login .header {
+    padding-top: 32px;
+    padding-bottom: 24px;
+    width: 100%;
+    text-align: center;
+}
+#login .logo {
+    font-size: 48px;
+}
+#login .main {
+    display: block;
+}
+#login .content {
+    margin: 0 auto;
+    width: 340px;
+    padding: 0 16px;
+}
+#login .form-header {
+    text-align: center;
+}
+#login .header-tittle {
+    line-height: 1.5;
+    font-weight: 300;
+    letter-spacing: -.5px;
+    font-size: 24px;
+}
+#login .form-container {
+    text-align: left;
+}
+#login .form-body {
+    border-radius: 6px;
+    border: 1px solid hsl(215, 15.4%, 15.3%);
+    padding: 20px;
+    margin-top: 16px;
+}
+#login .form-label {
+    display: block;
+    font-weight: 400;
+    margin-bottom: 7px;
+}
+#login .form-input {
+    display: block;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    padding: 5px 12px;
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid hsl(215, 15.4%, 15.3%);
+}
+#login .forgot-password {
+    position: relative;
+    float: right;
+    top: 2px;
+    font-size: 12px;
+    color: hsl(212, 100%, 67.3%);
+}
+#login .form-button {
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+    width: 100%;
+    background-color: hsl(131.5, 58.6%, 33.1%);
+    border: 1px solid hsl(131.1, 55.3%, 40.4%);
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 5px 16px;
+    color: hsl(0, 0%, 100%);
+}
+#login .callout {
+    border: 1px solid hsl(214.7, 7.9%, 46.9%);
+    border-radius: 6px;
+    padding: 15px 20px;
+    text-align: center;
+    margin-top: 16px;
+}
+#login .callout-link {
+    color: hsl(212, 100%, 67.3%);
+}
+#login .footer {
+    margin: 40px auto;
+    padding: 40px 16px;
+    font-size: 12px;
+}
+#login .footer-list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+#login .footer-list-item {
+    margin: 0 8px;
+}
+#login .footer-link {
+    color: hsl(212, 100%, 67.3%);
+}
