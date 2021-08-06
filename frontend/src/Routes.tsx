@@ -11,40 +11,15 @@ function Routes() {
             <Sidebar />
             <Switch>
                 <Route path="/login">
-                    <h1>LOGIN</h1>
-                    <div className="App">
-                        <header className="App-header">
-                            <img src={logo} className="App-logo" alt="logo" />
-                            <p>
-                                Edit <code>src/App.tsx</code> and save to reload.
-                            </p>
-                            <Link className="App-link" to="/login">
-                                Sing In
-                            </Link>
-                            <Link className="App-link" to="/BankApp">
-                                BankApp
-                            </Link>
-                        </header>
-                    </div>
-                    <div style={{ color: 'white' }}>Alguma coisa</div>
+                    <h1>Login</h1>
+                    <div >Alguma coisa</div>
                 </Route>
                 <Route path="/BankApp">
-                    <div style={{ color: 'white' }}>Outra coisa</div>
-                    <div className="App">
-                        <header className="App-header">
-                            <img src={logo} className="App-logo" alt="logo" />
-                            <p>
-                                Edit <code>src/App.tsx</code> and save to reload.
-                            </p>
-                            <Link className="App-link" to="/login">
-                                Sing In
-                            </Link>
-                            <Link className="App-link" to="/BankApp">
-                                BankApp
-                            </Link>
-                        </header>
-                    </div>
+                    <div >Outra coisa</div>
                     <BankApp />
+                </Route>
+                <Route path="/register">
+                    <div >Register</div>
                 </Route>
                 <Route path="/">
                     <div className="App">
