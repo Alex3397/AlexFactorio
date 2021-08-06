@@ -1,0 +1,87 @@
+#Sidebar {
+    position: fixed;
+    width: 130px;
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    height: 100vh;
+    background: hotpink;
+  }
+  .collapsed {
+    visibility: collapse;
+  }
+  .external-icon {
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  #Sidebar .Sidebar-icon {
+    position: absolute;
+    left: 135px;
+    top: 20px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  #Sidebar .item {
+    margin: 10px 0;
+  }
+  #Sidebar .link-icon {
+    position: relative;
+    top: 1px;
+  }
+  #Sidebar .closemenu {
+    position: absolute;
+    right: 0;
+    z-index: 9999;
+    line-height: 20px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 22px;
+    top: 55px;
+    cursor: pointer;
+  }
+  #Sidebar .pro-sidebar {
+    width: 100%;
+    min-width: 100%;
+  }
+  #Sidebar .pro-sidebar.collapsed {
+    width: 80px;
+    min-width: 80px;
+  }
+  #Sidebar .pro-sidebar-inner {
+    box-shadow: 0.5px 0.866px 2px 0px rgba(0, 0, 0, 0.15);
+  }
+  #Sidebar .pro-sidebar-inner .pro-sidebar-layout {
+    overflow-y: hidden;
+  }
+  #Sidebar .pro-sidebar-inner .pro-sidebar-layout .logotext p {
+    font-size: 20px;
+    padding: 0 20px;
+    font-weight: bold;
+  }
+  #Sidebar .pro-sidebar-inner .pro-sidebar-layout ul {
+    padding: 0 5px;
+  }
+  #Sidebar .pro-sidebar-inner .pro-sidebar-layout ul .pro-inner-item {
+    margin: 10px 0px;
+    font-weight: bold;
+  }
+  #Sidebar .pro-sidebar-inner .pro-sidebar-layout ul .pro-inner-item .pro-icon-wrapper {
+    border-radius: 3px;
+  }
+  #Sidebar .logo {
+    padding: 20px;
+  }
+  #Sidebar .switch {
+    position: relative !important;
+    top: 5px !important;
+  }
+
+  @media only screen and (max-width: 720px) {
+    html {
+      overflow: hidden;
+    }
+  }

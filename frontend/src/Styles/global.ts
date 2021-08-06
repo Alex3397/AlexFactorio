@@ -5,6 +5,10 @@ export default createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+  }
+  a {
+    color: ${props => props.theme.colors.text};
   }
   body {
     background: ${props => props.theme.colors.background};

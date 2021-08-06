@@ -1,12 +1,14 @@
 import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 import logo from './logo.svg';
-import './App.css';
+import './Routes.css';
 import BankApp from "./BankApp/BankApp";
+import Sidebar from "./Sidebar/Sidebar";
 
 
 function Routes() {
     return (
         <BrowserRouter>
+            <Sidebar />
             <Switch>
                 <Route path="/login">
                     <h1>LOGIN</h1>
@@ -42,7 +44,7 @@ function Routes() {
                             </Link>
                         </header>
                     </div>
-                    <BankApp/>
+                    <BankApp />
                 </Route>
                 <Route path="/">
                     <div className="App">
