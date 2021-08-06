@@ -14,9 +14,18 @@ import Toggle from "../Toggle/Toggle";
 
 const Sidebar = () => {
 
-    const [menuCollapse, setMenuCollapse] = useState(false)
+    const sidebarCollapsed:boolean = Boolean(localStorage.getItem('sidebar-collapsed'));
+    const [isCollapsed, setIsCollapsed] = useState(sidebarCollapsed ? true : false)
 
-    const menuIconClick = () => { menuCollapse ? setMenuCollapse(false) : setMenuCollapse(true) };
+    const handleCollapse = () => {
+        if (isCollapsed) {
+            setIsCollapsed(false);
+            localStorage.removeItem('sidebar-collapsed');
+        } else {
+            setIsCollapsed(true);
+            localStorage.setItem('sidebar-collapsed', "false")
+        }
+    }
 
     const [theme, setTheme] = usePeristedState<DefaultTheme>('theme', light);
 
@@ -24,9 +33,9 @@ const Sidebar = () => {
 
     return (
         <>
-            <div className={"external-icon " + (menuCollapse ? '' : 'collapsed')} onClick={menuIconClick}><FiChevronsRight/></div>
-            <div id="Sidebar" className={(menuCollapse ? 'collapsed' : '')}>
-                <div className="Sidebar-icon" onClick={menuIconClick}><FiChevronsLeft /></div>
+            <div className={"external-icon " + (isCollapsed ? '' : 'collapsed')} onClick={handleCollapse}><FiChevronsRight/></div>
+            <div id="Sidebar" className={(isCollapsed ? 'collapsed' : '')}>
+                <div className="Sidebar-icon" onClick={handleCollapse}><FiChevronsLeft /></div>
                 <div className="item">
                     <Link className="link" to="/">
                         <FiHome className="link-icon" />
