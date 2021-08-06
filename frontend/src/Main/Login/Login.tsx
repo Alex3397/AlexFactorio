@@ -16,7 +16,7 @@ const Login = () => {
                                 <h1 className="header-tittle">Sign in to AlexHub</h1>
                             </div>
                             <div className="form-body">
-                                <form className="form" action="/login" acceptCharset="UTF-8" method="post">
+                                <form className="form" action="https://alexfactory.herokuapp.com/login" acceptCharset="UTF-8" method="post">
                                     <label className="form-label" htmlFor="username">
                                         Username or email address
                                     </label>
