@@ -12,6 +12,7 @@ export default createGlobalStyle`
   }
   #login .form-input {
     background-color: ${props => props.theme.colors.backgroundColor};
+    color: ${props => props.theme.colors.text}
   }
   #login .form-body {
     background-color: ${props => props.theme.colors.divBackground};
