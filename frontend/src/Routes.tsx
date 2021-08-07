@@ -10,26 +10,28 @@ import MainPage from './Main/MainPage/MainPage';
 
 function Routes() {
     return (
-        <BrowserRouter>
-            <Sidebar />
-            <Switch>
-                <Route path="/login">
-                    <Login/>
-                </Route>
-                <Route path="/bankapp">
-                    <BankApp />
-                </Route>
-                <Route path="/signup">
-                    <SignUp />
-                </Route>
-                <Route path="/main">
-                    <MainPage />
-                </Route>
-                <Route path="/">
-                    <LandingPage />
-                </Route>
-            </Switch>
-        </BrowserRouter>
+        <>
+            <BrowserRouter>
+                <Sidebar />
+                <Switch>
+                    <Route path="/login">
+                        <Login />
+                    </Route>
+                    <Route path="/bankapp">
+                        <BankApp />
+                    </Route>
+                    <Route path="/signup">
+                        <SignUp />
+                    </Route>
+                    <Route path="/main">
+                        <MainPage />
+                    </Route>
+                    <Route path="/">
+                        <LandingPage />
+                    </Route>
+                </Switch>
+            </BrowserRouter>
+        </>
     )
 }
 

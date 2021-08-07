@@ -1,10 +1,10 @@
 #Sidebar {
-    position: fixed;
+    position: absolute;
     width: 130px;
     display: block;
     align-items: center;
     justify-content: space-between;
-    height: 100vh;
+    height: 15vh;
   }
   .collapsed {
     visibility: collapse;
@@ -49,10 +49,4 @@
   #Sidebar .switch {
     position: relative !important;
     top: 5px !important;
-  }
-
-  @media only screen and (max-width: 720px) {
-    html {
-      overflow: hidden;
-    }
   }
