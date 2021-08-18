@@ -5,7 +5,7 @@ import usePeristedState from '../Utils/usePersistedState'
 
 import { FiChevronsLeft, FiChevronsRight, FiHome, FiLogIn, FiUserPlus } from "react-icons/fi";
 import { AiFillBank } from "react-icons/ai";
-import "./Sidebar.css"
+import "./Sidebar.css";
 
 import light from '../Styles/Themes/light';
 import dark from '../Styles/Themes/dark';
