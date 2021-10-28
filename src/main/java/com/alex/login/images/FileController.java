@@ -37,13 +37,12 @@ public class FileController {
                 setFILE_PATH_ROOT(System.getProperty("user.dir") + relativePath);
                 break;
             case "hosting":
-                setRelativePath("src/main/resources/hosting/");
+                setRelativePath("/src/main/resources/hosting/");
                 setFILE_PATH_ROOT(System.getProperty("user.dir") + relativePath);
                 break;
         }
         byte[] image = new byte[0];
         try {
-            System.out.println(FILE_PATH_ROOT+filename);
             image = FileUtils.readFileToByteArray(new File(FILE_PATH_ROOT+filename));
         } catch (IOException e) {
             throw new ImageNotFoundException();
