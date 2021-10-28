@@ -23,15 +23,23 @@ public class FileController {
 
     @GetMapping("/{path}/{filename}")
     public ResponseEntity<byte[]> getImage(@PathVariable("path") String path,@PathVariable("filename") String filename) {
-        if (path.equals("confirm")) {
-            setRelativePath("/src/main/resources/templates/emails/Confirm Email/images/");
-            setFILE_PATH_ROOT(System.getProperty("user.dir") + relativePath);
-        } else if (path.equals("revalidate")) {
-            setRelativePath("/src/main/resources/templates/emails/Revalidate Token/images/");
-            setFILE_PATH_ROOT(System.getProperty("user.dir") + relativePath);
-        } else if (path.equals("reset")) {
-            setRelativePath("/src/main/resources/templates/emails/Reset Password/images/");
-            setFILE_PATH_ROOT(System.getProperty("user.dir") + relativePath);
+        switch (path) {
+            case "confirm":
+                setRelativePath("/src/main/resources/templates/emails/Confirm Email/images/");
+                setFILE_PATH_ROOT(System.getProperty("user.dir") + relativePath);
+                break;
+            case "revalidate":
+                setRelativePath("/src/main/resources/templates/emails/Revalidate Token/images/");
+                setFILE_PATH_ROOT(System.getProperty("user.dir") + relativePath);
+                break;
+            case "reset":
+                setRelativePath("/src/main/resources/templates/emails/Reset Password/images/");
+                setFILE_PATH_ROOT(System.getProperty("user.dir") + relativePath);
+                break;
+            case "hosting":
+                setRelativePath("src/main/resources/hosting/");
+                setFILE_PATH_ROOT(System.getProperty("user.dir") + relativePath);
+                break;
         }
         byte[] image = new byte[0];
         try {
