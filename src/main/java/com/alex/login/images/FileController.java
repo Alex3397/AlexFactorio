@@ -43,6 +43,7 @@ public class FileController {
         }
         byte[] image = new byte[0];
         try {
+            System.out.println(FILE_PATH_ROOT+filename);
             image = FileUtils.readFileToByteArray(new File(FILE_PATH_ROOT+filename));
         } catch (IOException e) {
             throw new ImageNotFoundException();
